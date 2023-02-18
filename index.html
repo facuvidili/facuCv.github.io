@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="cv_facu.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="icon" href="https://img.icons8.com/plasticine/1x/resume.png">
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/648a93d3be.js"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="cv_facu.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+
+        <title>CV - Facundo Vidili</title>
+    </head>
+    <body class="w-full">
+        <nav class="sticky top-0 w-full md:block lg:flex">
+
+            <div id="img">
+
+            </div>
+
+            <div id="desc">
+                <h1 class="text-3xl font-bold text-clifford">Facundo Vidili</h1>
+                <div id="data">
+                    <div>
+                        <i class="fas fa-envelope-square"></i>
+                        <a href="mailto:facuvidili@gmail.com">facuvidili@gmail.com</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-alt"></i>
+                        <a href="tel:+542914255998">+542914255998</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a
+                            href="https://www.google.com.ar/maps/place/Rawson+1657+Dpto+5,+U9000BCU+Comodoro+Rivadavia,+Chubut/@-45.8640775,-67.5020903,17z/data=!3m1!4b1!4m6!3m5!1s0xbde455f4dc3fd573:0x5ad613ba8bfa190b!8m2!3d-45.8640775!4d-67.4999016!16s%2Fg%2F11pz7yx5kf">Rawson
+                            1657 Dpto 5, 9000 Comodoro Rivadavia</a>
+                    </div>
+
+                </div>
+                <button class="rounded-full bg-purple-400 p-2 shad"
+                    onclick="descargar()">Descargar Curriculum</button>
+
+            </div>
+
+
+
+
+
+        </nav>
+
+        <hr>
+
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-span-3 md:col-span-3 lg:col-span-2 border-r-4
+                border-gray-500">
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Formación</h3>
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-2">
+                            <div class="mb-20">
+                                <div class="peer cursor-pointer inline-flex">
+                                    <h4 class="text-m">Economía y Gestión de
+                                        las
+                                        Organizaciones<i class="fa-solid
+                                            fa-caret-down"></i></h4>
+
+                                </div>
+                                <div class="absolute z-40 hidden peer-hover:flex
+                                    flex-col bg-white drop-shadow-lg">
+                                    <a class="px-5 py-3">Escuela Superior de
+                                        Comercio, Bahía Blanca</a>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="peer cursor-pointer inline-flex">
+                                    <h4 class="text-m">Analista Programador<i
+                                            class="fa-solid fa-caret-down"></i></h4>
+                                </div>
+                                <div class="absolute z-40 hidden peer-hover:flex
+                                    flex-col bg-white drop-shadow-lg">
+                                    <a class="px-5 py-3">Universidad de La
+                                        Patagonia San Juan Bosco, Comodoro
+                                        Rivadavia</a>
+                                    <a class="px-5 py-3"> Terminando la carrera
+                                        de Analista Programador (3 años). Sólo
+                                        quedan 2 finales. Y continuando la
+                                        carrera de Licenciatura en Informática</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-20 col-span-1">ene 2002 - dic 2004</div>
+                            <div class="mb-20 col-span-1">ene 2020 - presente</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Experiencia</h3>
+                    <div class="grid grid-cols-3">
+                        <div class="col-span-2">
+                            <div class="mb-20">
+                                <div class="peer cursor-pointer inline-flex">
+                                    <h4 class="text-m">Trabajo de Mensajería y
+                                        Gestión de
+                                        Trámites<i class="fa-solid
+                                            fa-caret-down"></i></h4>
+
+                                </div>
+                                <div class="absolute z-40 hidden peer-hover:flex
+                                    flex-col bg-white drop-shadow-lg">
+                                    <a class="px-5 py-3">Cadetería de la Bahía,
+                                        Bahía Blanca</a>
+
+                                </div>
+                            </div>
+
+                            <div class="mb-20">
+                                <div class="peer cursor-pointer inline-flex">
+                                    <h4 class="text-m">Mecánico de Montaje -
+                                        Reparación
+                                        de Locomotoras Diesel<i class="fa-solid
+                                            fa-caret-down"></i></h4>
+
+                                </div>
+                                <div class="absolute z-40 hidden peer-hover:flex
+                                    flex-col bg-white drop-shadow-lg">
+                                    <a class="px-5 py-3">FerroBaires - Trenes
+                                        Argentinos, Bahía Blanca</a>
+                                    <a class="px-5 py-3">Reparaciones periódicas
+                                        a locomotoras diesel y armado de motores
+                                        de locomotoras desde cero</a>
+                                </div>
+                            </div>
+                            <div class="mb-20">
+                                <div class="peer cursor-pointer inline-flex">
+                                    <h4 class="text-m">Operario de Mantenimiento
+                                        General
+                                        -
+
+                                        Operario de Vías y Obras - Chofer <i
+                                            class="fa-solid fa-caret-down"></i></h4>
+                                </div>
+                                <div class="absolute z-40 hidden peer-hover:flex
+                                    flex-col bg-white drop-shadow-lg">
+                                    <a class="px-5 py-3">Trenes Argentinos,
+                                        Bahía Blanca</a>
+                                    <a class="px-5 py-3">Tareas de mantenimiento
+                                        edilicio, electricidad, pintura, trabajo
+                                        en
+                                        techos, albañilería, trabajos de
+                                        reparación y mantenimiento de vías,
+                                        mantenimiento de parque de la estación.
+                                        Chofer de furgón largo de
+                                        carga y transporte de pasajeros, y de
+                                        tractor con desmalezadora.</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-20 col-span-1">ene 2006 - sep 2008</div>
+                            <div class="mb-20 col-span-1">oct 2008 - dic 2018</div>
+                            <div class="mb-20 col-span-1">ene 2018 - dic 2020</div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Pasatiempos</h3>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div>
+                            <ul>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Kayaking</li>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Video Juegos</li>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Padel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Trekking</li>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Fútbol</li>
+                                <li class="text-lg"><i class="fa-solid
+                                        fa-circle"></i> Progamación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-3 md:col-span-3 lg:col-span-1">
+
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Datos Personales</h3>
+                    <div>
+                        <div class="mb-8">
+                            <div class="peer cursor-pointer inline-flex">
+                                <h4 class="text-lg">Fecha de Nacimiento</h4>
+                            </div>
+                            <div>
+                                4 de Marzo de 1987
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <div class="peer cursor-pointer inline-flex">
+                                <h4 class="text-lg">Carné de conducir</h4>
+                            </div>
+                            <div>
+                                B1
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <div class="peer cursor-pointer inline-flex">
+                                <h4 class="text-lg">Estado Civil</h4>
+
+                            </div>
+                            <div>
+                                Soltero
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <div class="peer cursor-pointer inline-flex">
+                                <h4 class="text-lg">LinkedIn</h4>
+
+                            </div>
+                            <div>
+                                <a
+                                    href="http://linkedin.com/in/facundo-vidili-13916310b">
+                                    linkedin.com/in/facundo-vidili-13916310b</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <hr>
+
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Idiomas</h3>
+
+                    <div>
+                        <label>Inglés</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 70%"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+
+                <div class="m-8">
+                    <h3 class="text-3xl mb-8">Competencias</h3>
+
+                    <div class="mb-2">
+                        <label>PHP</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 75%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>HTML</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 75%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>Javascript</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 75%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>CSS</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 75%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>Java</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 75%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>MySQL</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 60%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>SQL Server</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 60%"></div>
+                        </div>
+
+                    </div>
+                    <div class="mb-2">
+                        <label>Git</label>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5
+                            dark:bg-gray-700">
+                            <div class="bg-blue-400 h-2.5 rounded-full"
+                                style="width: 60%"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <footer>
+
+            </footer>
+
+
+
+        </body>
+    </html>

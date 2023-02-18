@@ -1,0 +1,37 @@
+
+body{
+    background-color: rgb(220, 211, 228);
+    font-family: "Trirong", serif;
+
+}
+nav{
+    display: block;
+    background-color: rgb(215, 235, 239);
+    box-shadow: 0 1px 5px 5px black;
+    height: fit-content;
+    width: fit-content;
+
+}
+#desc{
+   padding: 5% 0 3% 15%;
+   font-size: large;
+   
+}
+#img{
+    flex-shrink: 0;
+	margin: 30px 30px 30px 80px;
+	height: calc(100px + 6vw);
+	width: calc(100px + 6vw);
+	border: calc(8px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    background-image:  url("facuCVimg.jpg"), linear-gradient( to bottom right, #ff3cac, #562b7c, #2b86c5);
+	
+}
+hr{
+    box-shadow: 0 1px 1px 1px black;
+}
